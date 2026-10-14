@@ -1,0 +1,28 @@
+what is Playwright-->
+it is a open source tool automtaion tool
+Web apps,API
+It is a framework that help to automate web apps a to enable e2e
+
+
+History
+release on 2020
+Microsoft
+
+
+
+properties/Features
+
+cros browser--edeg,chrome,safari
+cross Platform-Window,Linux,MAC
+support multiple language--java,C#,TS,JS,Ruby,python
+
+
+Inbuilt 
+Test mobile web--chrome,safari
+Auto wait
+Built in report
+code geneartion
+Trace viwer
+
+
+

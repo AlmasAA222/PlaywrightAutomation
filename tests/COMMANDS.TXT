@@ -1,0 +1,57 @@
+npx  playwright test .\Login.spec.ts --
+npx playwright test .\Login.spec.ts --reporter=html --headed
+ npx playwright show-report
+
+
+npx playwright test --config=playwright.config.ts --headed --reporter=html
+
+
+npx playwright test .\MyTracing.spec.ts --headed --reporter=html --trace on
+
+npx playwright test Debug.spec.ts --debug
+
+npx playwright test --grep "@smoke" --headed --reporter=html
+npx playwright test --grep "@smoke | @sanity" --headed --reporter=html
+
+
+
+Playwright Commands:
+     To run files: 
+        1. npx playwright test --> runs all the playwright tests
+        2. npx playwright test filename --> runs that specific test(filename)
+        3. npx playwright test --g "description" --> runs test by name
+        4. npx playwright test --headed --> runs test in headed mode
+        5. npx playwright test --ui --> runs tests in UI mode
+        6. npx playwright test --project=browser name --> runs tests in that specific browser
+        7. npx playwright show-report --> generate and view test report
+        8. npx playwright test hooks2.spec.ts --headed --reporter=html
+
+Integrating Allure Report:
+   Steps:
+      1. npm install -D allure-playwright -- install this commandline
+      2. Add this info at config file : 
+      reporter: [
+  ['list'],
+  ['allure-playwright', { outputFolder: 'allure-results' }]
+],
+      3.allure generate allure-results --clean 
+      4. allure open
+
+Fixtures: 
+   Fixtures are reusable components that provide test resources.
+   examples: page, browser, context.
+
+DataDriven
+npm install xlsx
+
+
+
+
+POM-->Page object model
+
+
+It is a design pattern
+class-->object
+
+why?
+code resuablity,code mantainence
